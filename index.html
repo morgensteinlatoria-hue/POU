@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>GigaPou</title>
+
+  <link rel="preload" as="image" href="images/mini-pou.png">
+  <link rel="preload" as="image" href="images/Injection.png">
+  <link rel="preload" as="image" href="images/big-pou.png">
+  <link rel="preload" as="image" href="images/bg.png">
+  <link rel="preload" as="audio" href="audio/music.mp3">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section id="splash" class="screen">
+    <div class="stage" aria-live="polite">
+      <img id="pouBase" class="pou pulse" src="images/mini-pou.png" alt="Pou" />
+      <div id="hint" class="hint">Tap me</div>
+      <img id="pouInject" class="pou inject" src="images/Injection.png" alt="Injection" />
+    </div>
+    <div id="fade" class="fade"></div>
+  </section>
+
+  <section id="main" class="screen hidden" aria-hidden="true">
+    <header id="siteHeader" class="site-header hidden" aria-hidden="true">
+      <div class="nav-wrap">
+        <div class="brand-wrap">
+          <a class="brand" href="#" aria-label="Home">
+            <img src="images/logo.png" alt="Logo" class="brand-logo" />
+          </a>
+          <span class="site-title">$GIGAPOU</span>
+        </div>
+
+        <div id="caBar" class="ca-bar-inline" role="group" aria-label="Contract address">
+          <span class="ca-label">CA</span>
+          <span id="caText" class="ca-value" data-ca="Coming soon">Coming soon</span>
+          <button id="copyCA" class="btn ca-copy" aria-describedby="copyBadge" aria-label="Copy contract address">Copy</button>
+        </div>
+
+        <button id="burger" class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="navMenu" class="nav" role="navigation">
+          <ul class="nav-list" aria-label="Socials">
+            <li>
+              <a href="https://t.me/Coming soon" target="_blank" rel="noopener" class="nav-link" aria-label="Telegram">
+                <img src="images/tglogo.png" alt="Telegram">
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/Coming soon" target="_blank" rel="noopener" class="nav-link" aria-label="X">
+                <img src="images/Xlogo.png" alt="X">
+              </a>
+            </li>
+            <li>
+              <a href="https://dexscreener.com/Coming soon" target="_blank" rel="noopener" class="nav-link" aria-label="DEX">
+                <img src="images/dexlogo.png" alt="DEX">
+              </a>
+            </li>
+          </ul>
+          <a href="https://app.uniswap.org/Coming soon" target="_blank" rel="noopener" class="btn buy-btn">Buy</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="hero-wrap">
+      <img class="pou hero" src="images/big-pou.gif" alt="Super Pou in the center">
+    </div>
+  </section>
+
+  <audio id="bgMusic" src="audio/music.mp3" preload="auto" loop></audio>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
